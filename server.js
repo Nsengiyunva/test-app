@@ -10,6 +10,6 @@ app.get( "/", ( res, req ) => {
     } )
 } )
 
-app.listen( 9500, () => {
-    console.log( "Server is listening on port 9500" )
+app.listen( 9550, () => {
+    console.log( "Server is listening on port 9550 " )
 } )

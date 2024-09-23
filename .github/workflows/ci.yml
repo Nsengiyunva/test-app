@@ -18,6 +18,6 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build -t cicd-pipeline
+      run: docker build -t cicd-pipeline .
     - name: Push to Docker Hub
       run: docker push nsengiyunva2021/cicd-pipeline:latest
